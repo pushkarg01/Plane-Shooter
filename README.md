@@ -27,8 +27,6 @@ Auto-fire: The plane shoots continuously during gameplay.
 
 ![Screenshot (239)](https://github.com/user-attachments/assets/77796ceb-f679-4518-a36a-abf41311ace9)
 ![Screenshot (241)](https://github.com/user-attachments/assets/3bc6b8e0-9350-4773-86a4-3ca414218e1d)
-![Screenshot (240)](https://github.com/user-attachments/assets/06327907-f801-4fbd-af9b-0a25790eeb7f)
 
 ![Screenshot (242)](https://github.com/user-attachments/assets/297ad34f-1179-4ff8-871a-f861e13b9274)
 ![Screenshot (243)](https://github.com/user-attachments/assets/efb73201-a6fe-4571-9e63-6ed4bc5d7e3a)
-![Screenshot (244)](https://github.com/user-attachments/assets/324ba5e2-abc0-4ffb-92c0-1a31ba1e6697)
