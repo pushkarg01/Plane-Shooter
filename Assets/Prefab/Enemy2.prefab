@@ -126,18 +126,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ee72a2bc5d9a3428b1187d0246d027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 5190174429227837513}
-  - {fileID: 4959080691333577710}
+  effectPrefab: {fileID: 8267923648758643673, guid: 6c28547d1ce9027448facde03e2bf8f1, type: 3}
   bulletPrefab: {fileID: 6883987976314602471, guid: a0f91b37aad00a844845f8ba3d272c56, type: 3}
+  coinPrefab: {fileID: 1252482921955391071, guid: 7a660d7e0f340344182f97fa3b426f57, type: 3}
   enemyFlash: {fileID: 6028710515427158018}
   enemyExplostionPrefab: {fileID: 567694759074861113, guid: e704604d14c7ff24a8edb81880283c88, type: 3}
-  effectPrefab: {fileID: 8267923648758643673, guid: 6c28547d1ce9027448facde03e2bf8f1, type: 3}
-  coinPrefab: {fileID: 1252482921955391071, guid: 7a660d7e0f340344182f97fa3b426f57, type: 3}
-  spawnTime: 0.5
+  bulletSpawnTime: 0.5
   speed: 1
   health: 10
   barSize: 1
+  spawnPoints:
+  - {fileID: 5190174429227837513}
+  - {fileID: 4959080691333577710}
   healthBar: {fileID: 4495879435012535859}
   audioSource: {fileID: -104186164135927900}
   bulletSound: {fileID: 8300000, guid: ddad28c9dde973248a5649068c855e6c, type: 3}

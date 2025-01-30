@@ -979,7 +979,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.909804, g: 0.7607844, b: 0.454902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3331,7 +3331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed8b8152ff7c6f4fba4c51057850b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.3
 --- !u!1 &1759049484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,6 +4203,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130176469408853803, guid: e6c069819d601f64eb9548106fae8400, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 130176469408853803, guid: e6c069819d601f64eb9548106fae8400, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1990224652597911303, guid: e6c069819d601f64eb9548106fae8400, type: 3}

@@ -4,38 +4,30 @@ using UnityEngine;
 
 public class SpawnBullet : MonoBehaviour
 {
-    public GameObject bulletPrefab;
-    public Transform spawnPoint1;
-    public Transform spawnPoint2;
-    public GameObject flash;
+    #region Bullet Variables
+
+    public GameObject bulletPrefab, flash;
+
+    public Transform spawnPoint1, spawnPoint2;
+
     public AudioSource audioSource;
 
     [SerializeField] private float bulletSpawnTime = 0.4f;
+    #endregion
+
+    #region Start Logic
     void Start()
     {
         flash.SetActive(false);
         StartCoroutine(Shoot());
     }
+    #endregion
 
-    void Update()
-    {
-        /*  
-         *  Instantiate Method
-         *  
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Instantiate(bulletPrefab,spawnPoint1.position,Quaternion.identity);
-            Instantiate(bulletPrefab,spawnPoint2.position,Quaternion.identity);
-        }
-        */
-
-        
-    }
-
+    #region Firing Coroutine
     void Fire()
     {
-        Instantiate(bulletPrefab, spawnPoint1.position, Quaternion.identity);
-        Instantiate(bulletPrefab, spawnPoint2.position, Quaternion.identity);
+        Instantiate(bulletPrefab, spawnPoint1.position, Quaternion.identity, transform);
+        Instantiate(bulletPrefab, spawnPoint2.position, Quaternion.identity, transform);
     }
 
     IEnumerator Shoot()
@@ -44,10 +36,13 @@ public class SpawnBullet : MonoBehaviour
         {
             yield return new WaitForSeconds(bulletSpawnTime);
             Fire();
+
             audioSource.Play();
             flash.SetActive(true);
             yield return new WaitForSeconds(0.04f);
             flash.SetActive(false);
         }
     }
+ #endregion
+
 }

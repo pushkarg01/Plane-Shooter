@@ -5,29 +5,33 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-
+    #region Player Variables
     float minX, maxX,minY,maxY;
     [SerializeField] private float padding=0.8f;
+
+    [Header("Effects")]
     [SerializeField] private GameObject explostion;
     [SerializeField] private GameObject effectPrefab;
 
-
+    [Header("Variables")]
+    [SerializeField] private float speed = 10f;
     public float health = 20f;
     float barFillAmount = 1f;
     float damage = 0;
 
+    [Header("References")]
     public HealthUIPlayer playerhealtbar;
     public CoinCount coinCountScript;
-
     public GameController gameController;
 
+    [Header("SFX")]
     public AudioSource audioSource;
     public AudioClip damageSound;
     public AudioClip explosionSound;
     public AudioClip coinSound;
+    #endregion
 
-
+    #region Camera Bound Logic
     void Start()
     {
         FindBound();
@@ -40,10 +44,11 @@ public class PlayerMovement : MonoBehaviour
         minX = cam.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
         maxX = cam.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
         minY = cam.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
-        maxY = cam.ViewportToWorldPoint(new Vector3(1, 1, 0)).y - padding;
+        maxY = cam.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - 2*padding;
     }
+    #endregion
 
-
+    #region Update Logic
     void Update()
     {
         /*   
@@ -62,7 +67,9 @@ public class PlayerMovement : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position,newPos,speed*Time.deltaTime);
         }
     }
+    #endregion
 
+    #region Trigger Action
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "EnemyBullet")
@@ -91,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+    #endregion
 
     void DamagePlayerHealth()
     {
