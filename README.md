@@ -5,15 +5,15 @@ This is a 2D plane shooter game developed for Android using Unity. The game offe
 
 ## Features
 
--Smooth Player Controls: Intuitive touch controls for seamless gameplay.
+- Smooth Player Controls: Intuitive touch controls for seamless gameplay.
 
--Challenging Enemies: Multiple enemy types with unique shooting behaviors.
+- Challenging Enemies: Multiple enemy types with unique shooting behaviors.
 
--Dynamic Gameplay: Only 3 levels were created.
+- Dynamic Gameplay: Only 3 levels were created.
 
--Score Tracking: Keep track of the player score and coin pick-ups.
+- Score Tracking: Keep track of the player score and coin pick-ups.
 
-Optimized for Android: Runs smoothly across various Android devices
+- Optimized for Android: Runs smoothly across various Android devices
 
 
 ## Controls
@@ -26,7 +26,6 @@ Auto-fire: The plane shoots continuously during gameplay.
 ## Screenshots
 
 ![Screenshot (239)](https://github.com/user-attachments/assets/77796ceb-f679-4518-a36a-abf41311ace9)
+
 ![Screenshot (241)](https://github.com/user-attachments/assets/3bc6b8e0-9350-4773-86a4-3ca414218e1d)
 
-![Screenshot (242)](https://github.com/user-attachments/assets/297ad34f-1179-4ff8-871a-f861e13b9274)
-![Screenshot (243)](https://github.com/user-attachments/assets/efb73201-a6fe-4571-9e63-6ed4bc5d7e3a)
